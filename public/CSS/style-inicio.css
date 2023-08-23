@@ -203,7 +203,8 @@ border-right: none;
     }
   
     #logo-img {
-      width: 100px;
+      width: 75px;
+      margin-top: 20px;
     }
     
     .button-menu{
@@ -248,5 +249,41 @@ border-right: none;
 
 #texto-inicio{
   display: none;
+    }
+    
+    .contenedor-inicio{
+      display: flex;
+      flex-direction: column;
+      background: white;
+      width: 100%;
+      height: 600px;
+      align-items: center;
+      justify-content: space-between;
+      padding: 50px;
+    }
+input{
+    width: 150px;
+    padding: 7px 30px;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    }
+    .footer {
+      background-color: rgb(51, 66, 51);
+      height: 500px;
+    }
+    .footer .footer-datos{  
+      height: 450px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: flex-start;
+    }
+    .pie-de-pagina {
+    
+      text-align: end;
+      margin-top: 25px;
     }
 }

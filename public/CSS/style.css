@@ -26,7 +26,7 @@ body {
   background: #718355;
   height: 150px;
   width: 100%;
-  padding: 5;
+  padding: 5px;
 }
 .header .logo {
   cursor: pointer;
@@ -97,7 +97,7 @@ body {
 
 #texto-banner {
   text-align: center;
-  width: 50%;
+  width: 47%;
   font-size: 20px;
   font-weight: 900;
   color: white;
@@ -105,7 +105,7 @@ body {
 }
 
 #texto-banner:hover {
-  transform: scale(1.15);
+  transform: scale(1.1);
 }
 #listaProductos {
   text-align: center;
@@ -160,13 +160,22 @@ article img {
 }
 
 .productos {
+  margin:5px;
+  padding:50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  justify-items: center;
 }
 
 .productos article p {
   text-align: center;
+}
+.productos .articulo{
+  padding:5px;
+  display:flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 .productos button {
@@ -184,7 +193,46 @@ article img {
   background: white;
   transform: scale(1.1);
 }
+.ImagenArticulo{
+  width: 100%;
+  border-radius: 60%;
+}
+.contenedor-producto{
+  margin: 10px 50px;
+  display: flex;
+  flex-direction: row;
+}
 
+.contenedor-producto .descripcion {
+  margin:10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.contenedor-producto .descripcion .lista1{
+  margin: 100px;
+  padding:5px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.contenedor-producto button {
+  border: none;
+  font-weight: 600;
+   font-size: 15px;
+  height: 50px;
+  border-radius: 5px;
+  background-color:#454742;
+-webkit-text-fill-color: white; 
+cursor: pointer;
+transition: 0.5s;
+}
+.contenedor-producto button:hover{
+  background-color:#8a907f;
+}
 .footer {
   background-color: rgb(51, 66, 51);
   height: 250px;
@@ -367,5 +415,52 @@ img {
 
   text-align: end;
   margin-top: 25px;
+}
+.ImagenArticulo{
+  width: 47.5%;
+  height: 47.5%;
+  border-radius: 0%
+}
+.contenedor-producto{
+  margin: 10px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contenedor-producto .descripcion {
+  font-size: 12px;
+  margin:10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+}
+.parrafo-producto {
+  font-size: 11px;
+}
+.contenedor-producto .descripcion .lista1{
+  font-size: 11px;
+  margin: 50px;
+  padding:5px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contenedor-producto button {
+  border: none;
+  font-weight: 600;
+   font-size: 15px;
+  height: 50px;
+  border-radius: 5px;
+  background-color:#454742;
+-webkit-text-fill-color: white; 
+cursor: pointer;
+transition: 0.5s;
+}
+.contenedor-producto button:hover{
+  background-color:#8a907f;
 }
 }
